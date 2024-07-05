@@ -1,1 +1,25 @@
-main branch 
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n < 1) {
+        cout << "Please enter a positive integer greater than 0." << endl;
+        return 1;
+    }
+
+    cout << "Even numbers from 1 to " << n << " are: ";
+    for (int i = 1; i <= n; ++i) {
+        if (i % 2 == 0) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+
+    return 0;
+}
+
